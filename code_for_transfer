@@ -1,0 +1,205 @@
+<body>
+
+    <header class="header">
+        <div class="logo">
+          <img src="https://github.com/summerwindnosara/websitetest/blob/main/logo2.jpeg?raw=true" alt="Logo">
+        </div>
+        <div class="site-title">
+          <h1>Casa Summer Wind</h1>
+          <p class="subtitle">Vacation in Nosara, Costa Rica</p>
+        </div>
+        <button class="menu-button">☰</button>
+    </header>
+    
+    <div class="home-text">
+        <p>Home<p>
+    </div>
+
+    <section class="hero">
+        <img src="https://github.com/summerwindnosara/websitetest/blob/main/SW3%2013.jpg?raw=true" alt="Casa Summer Wind">
+        <div class="hero-text">
+            <h2>Welcome to paradise on earth</h2>
+            <p>At Casa Summer Wind, we offer a private sanctuary to paradise.</p>
+            <a href="#" class="button">Go to Listings</a>
+        </div>
+    </section>
+
+    <section class="review">
+        <img src="pool.jpg" alt="Beautiful Pool">
+        <div class="review-text">
+            <h3>I Could not believe</h3>
+            <p>asdfjaks;dlfja!akajsdjf asdjklajf asldjalkdf jlasdjakljdflas</p>
+            <p>/ FirstName LastName</p>
+        </div>
+        <div class="review-text">
+            <h3>I Could not believe</h3>
+            <p>asdfjaks;dlfja!akajsdjf asdjklajf asldjalkdf jlasdjakljdflas</p>
+            <p>/ FirstName LastName</p>
+        </div>
+        <div class="review-text">
+            <h3>I Could not believe</h3>
+            <p>asdfjaks;dlfja!akajsdjf asdjklajf asldjalkdf jlasdjakljdflas</p>
+            <p>/ FirstName LastName</p>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="map-placeholder"></div>
+        <p>Casa Summer Wind is located in Nosara, Costa Rica, the perfect place for...</p>
+        <p>Costa Rica has yet to add addresses to many areas. To get around this, we use coordinates.</p>
+        <p class="contact">Questions? Call us at 1800-800-8000</p>
+    </section>
+
+</body>
+
+
+--
+
+/* General Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 25px 20px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px; /* Mobile height */
+    border: 1px solid;
+}
+
+/* Logo */
+.logo img {
+    width: 40px; /* Adjust this value as needed */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 50%; /* Makes it a circle */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    border: 2px solid #ccc; /* Optional: Adds a border around the circle */
+}
+
+/* Site Title */
+.site-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 0; /* Controls space around the whole block */
+    padding: 0px 0; /* Internal spacing */
+    border: 1px solid green;
+}
+
+/* Site h1 */
+.site-title h1 {
+    font-size: 28px; /* Adjust the size */
+    font-weight: normal; /* Remove bold if necessary */
+    border: 1px solid blue;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 16px;
+    font-style: italic; /* Italicized subtitle */
+    color: #444; /* Slightly darker color for contrast */
+    margin: 0;
+    border: 1px solid red;
+}
+
+/* Menu Button */
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Home Text */
+.home-text {
+    text-align: center; /* Centers the text */
+    font-size: 20px;
+    color: #333;
+    padding: 2px 0px;
+    display: block;
+    line-height: .5;
+}
+
+/* Hero Section - Controls Full Layout */
+.hero {
+    height: 450px;
+    position: relative;
+    border: 1px solid red; /* Take away later */
+}
+
+/* Hero Image - Aligns to the Top Left */
+.hero img {
+    height: 70%; /* Makes the image fill the height of the hero */
+}
+
+/* Hero Text - Aligns to Bottom Right */
+.hero-text {
+    position: absolute;
+    bottom: 0; /* Moves text towards the bottom */
+    right: 0; /* Aligns text to the right */
+    background: rgba(166, 193, 165, 0.98); /* Semi-transparent green */
+    padding: 20px 40px;;
+    color: white;
+    height: 35%;
+    width: 100%; /* Keeps text box compact */
+    max-width: 350px; /* Prevents it from being too wide */
+    text-align: left;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 8px 12px;
+    background: white;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Reviews */
+.review {
+    background: #6b9b88;
+    color: white;
+    padding: 10px;
+}
+
+.review-text {
+    margin-bottom: 10px;
+}
+
+.review img {
+    width: 100%;
+}
+
+/* Location Section */
+.location {
+    background: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100px;
+    background: #ddd;
+}
+
+/* Contact */
+.contact {
+    font-weight: bold;
+    font-size: 14px;
+}
